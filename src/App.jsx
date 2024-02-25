@@ -1,6 +1,8 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 
 function App() {
+   console.log(import.meta.env.VITE_SOME_KEY);
+
   const [length, setLength] = useState(8)
   const [numberAllowed, setNumberAllowed] = useState(false)
   const [charAllowed, setCharAllowed] = useState(false)
